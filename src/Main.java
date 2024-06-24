@@ -25,6 +25,26 @@ public class Main {
         //instancia a classe câmbio com as taxas
         Cambio cambio = new Cambio(moedas);
 
-        System.out.println(cambio.converte("BRL","USD",1000));
+
+        Menu menu = new Menu();
+        int flag = 0;
+        String moedaInicial = "";
+        String moedaFinal = "";
+        float montanteInicial = 0;
+        float montanteFinal = 0;
+
+        flag = menu.menuInicial();
+        while (flag != 0){
+            moedaInicial = menu.menuMoedas(1);
+            if(moedaInicial != ""){
+                moedaFinal = menu.menuMoedas(2);
+                if(moedaFinal != ""){
+                    montanteInicial = menu.menuMontante();
+                    montanteFinal = cambio.converte(moedaInicial,moedaFinal, montanteInicial);
+                    menu.menuResultado(montanteFinal);
+                }
+            }
+            flag = menu.menuFinal();
+        }
     }
 }
