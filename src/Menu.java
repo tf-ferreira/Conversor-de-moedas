@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class Menu {
     Hashtable<String, String> my_dict = new Hashtable<>();
 
+    //Construtor relaciona inteiros com os códigos de cada moeda
     public Menu() {
         my_dict.put("1","BRL");//real brasileiro
         my_dict.put("2","USD");//dolar americano

@@ -4,6 +4,8 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
+//Classe utilizada para leitura da API
+
 public class LeitorDeApi {
     private String json;
 

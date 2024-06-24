@@ -1,5 +1,7 @@
 import java.util.Hashtable;
 
+//Classe relaciona os códigos de cada moeda com sua respectiva taxa de câmbio
+//Também realiza a conversão
 public class Cambio {
 
     Hashtable<String, String> my_dict = new Hashtable<String, String>();

@@ -1,3 +1,4 @@
+//Record especificando apenas as moedas utilizadas neste projeto
 public record CambioMoedas(String USD, //dolar americano
                            String BRL, //real brasileiro
                            String ARS, //peso argentino
